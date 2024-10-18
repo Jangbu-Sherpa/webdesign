@@ -1,0 +1,31 @@
+// @mixin bg{
+//     height: 200px;
+//     width: 200px;
+// }
+
+@mixin d-flex($justify-content: flex-start, $align-items: center, $gap: 20px) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+// @mixin flex-between{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// @mixin bg($height: 200px, $width: 300px, $bg: #00ff00){
+//     height: $height;
+//     width: $width;
+//     background-color: $bg;
+
+// }
+
+@mixin flex-colum($align-items: center) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: $align-items;
+}

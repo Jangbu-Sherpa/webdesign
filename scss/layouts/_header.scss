@@ -1,0 +1,35 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    background-color: #35383da2;
+    padding: 10px 50px;
+    @include d-flex($justify-content: space-between);
+    color: #ffffff;
+    font-family: $general-font;
+    nav{
+        ul{
+            li{
+                margin: 20px;
+                text-transform: uppercase;
+                i{
+                    font-size: 14px;
+                    margin-left: 10px;
+                    color: $primary-color;
+                    transition: 0.5s;
+                }
+                &:hover{
+                   i{
+                    transform: rotate(-180deg);
+                   }
+                }
+                // &:last-child{
+                //     margin-right: 0px;
+                // }
+            }
+        }
+    }
+}
+
